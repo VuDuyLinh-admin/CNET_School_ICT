@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ICT Support Request</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      padding: 30px;
+    }
+    .form-box {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-box">
+  <h2>ICT Support Request</h2>
+  <form action="https://formspree.io/f/xqabgngz" method="POST">
+    <label>Full Name</label>
+    <input type="text" name="Full Name" required />
+
+    <label>Email</label>
+    <input type="email" name="Email" required />
+
+    <label>Department</label>
+    <input type="text" name="Department" />
+
+    <label>Request Type</label>
+    <select name="Request Type" required>
+      <option value="">-- Select --</option>
+      <option value="Reset Password">Reset Password</option>
+      <option value="Software Installation">Software Installation</option>
+      <option value="Device Issue">Device Issue</option>
+      <option value="New Equipment">New Equipment</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label>Details</label>
+    <textarea name="Details" rows="4" placeholder="Describe the issue..." required></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
+</div>
+
+</body>
+</html>
